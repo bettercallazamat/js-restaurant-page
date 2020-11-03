@@ -2,7 +2,7 @@
 
 > Restaurant page using benefits of ES6's modularized code. Project is made of different modules using webpack.
 
-![screenshot](./screenshot1.png)
+![screenshot](./screenshot.png)
 
 ## Built With
 - HTML & CSS
