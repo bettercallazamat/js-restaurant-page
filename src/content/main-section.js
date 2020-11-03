@@ -1,19 +1,24 @@
+import homeImage from "../assets/imgs/homeImage.png";
+
 const mainSection = () => {
     const mainElement = document.createElement('main');
+    const textContainer = document.createElement('div')
     const headingMain = document.createElement('h1');
     const descMain = document.createElement('p');
-    const imageMain = document.createElement('img');
+    const imageMain = new Image();
+
+    textContainer.classList.add("text-container")
 
     const addContent = () => {
-        headingMain.textContent = "title1";
-        descMain.textContent = "lorem ipsum";
-        const imageSrc = "https://hatrabbits.com/wp-content/uploads/2017/01/random.jpg";
-        imageMain.setAttribute('src', imageSrc);
+        headingMain.textContent = "Welcome to\nChef restaurant";
+        descMain.textContent = "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit excepturi quibusdam itaque numquam quas. Libero, accusamus! Rerum quaerat, ipsum fugiat, quibusdam iusto facere, dignissimos deleniti odio vero ratione nam necessitatibus.";
+        imageMain.src = homeImage;
     }
 
     const appendElements = () => {
-        mainElement.appendChild(headingMain);
-        mainElement.appendChild(descMain);
+        textContainer.appendChild(headingMain);
+        textContainer.appendChild(descMain);
+        mainElement.appendChild(textContainer);
         mainElement.appendChild(imageMain);
     }
 

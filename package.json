@@ -20,10 +20,10 @@
   },
   "homepage": "https://github.com/bettercallazamat/js-restaurant-page#readme",
   "devDependencies": {
+    "css-loader": "^5.0.0",
+    "file-loader": "^6.2.0",
+    "style-loader": "^2.0.0",
     "webpack": "^5.3.2",
     "webpack-cli": "^4.1.0"
-  },
-  "dependencies": {
-    "tabsy-css": "^1.0.0"
   }
 }
